@@ -72,5 +72,36 @@ let obj1 = {
 obj1.fn1()
 obj1.fn2()
 
+// reverse string
+
+let str = "Cooper"
+let element = "";
+for (let i = str.length - 1; i >= 0 ; i--) {   
+   element += str[i]
+   console.log(str[i]);
+}
+
+console.log(element);
+
+let arrstr = ["a","b","c","d","e","f"]
+let ele1 = ""
+let ele3 = ""
+for (let i = arrstr.length - 1; i >= 0;  i--) {
+   // ele1.push(arrstr[i])
+   ele3 += arrstr[i]
+}
+let splitele = ele3.split("")
+console.log(splitele);
+
+let ele2 = []
+for (let i = 0; i < arrstr.length; i++) {
+   ele2.unshift(arrstr[i])
+}
+console.log(ele2);
+
+
+
+
+
 
  
