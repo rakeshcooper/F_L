@@ -22,12 +22,55 @@ let nameees = () => { console.log("coopers"); }
 
  displayFun(square)
 
-const a = 0;
+let a = 0;
 
  {
-    const a = 3
-    console.log(a);
-    
+    let a = 3
+    console.log(a);  
  }
  console.log(a);
+
+ // spread and rest opertor
+
+ function multiply(...nums) {  // rest
+   console.log(nums[0] * nums[1]);
+ }
+ let arr = [10,3,6,7]
+ multiply(...arr) // spread
+
+function multiply2(a,x,y, ...num){
+   console.log(x,y,num);
+   console.log(typeof num);
+   
+}
+
+multiply2(2,3,5,8,9,8,5)
+
+// arrow function and normal function difference
+
+function fn(){
+ console.log(arguments);
+}
+fn(1,9,9,7)
+
+// const fnn = () => console.log(arguments);
+// fnn(1,1,2,1)
+
+var names = "rakesh"
+
+let obj1 = {
+   names : "Cooper",
+   fn1() {
+      console.log("the name is "+ this.names);
+   },
+
+   fn2: () => {
+      console.log("the name is "+ this.names);
+   }
+}
+
+obj1.fn1()
+obj1.fn2()
+
+
  
