@@ -98,7 +98,7 @@ for (let i = 0; i < arrstr.length; i++) {
    ele2.unshift(arrstr[i])
 }
 console.log(ele2);
-
+console.log(splitele);
 
 
 
