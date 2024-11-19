@@ -104,13 +104,32 @@ console.log(splitele);
 var scope = "I am global";
 function whatismyscope(){
    var scope = "I am just a local";
-   function func() {
-      return scope;
+   var n = "cooper"
+
+   return   function funct() {
+
+      return   function func() {
+         return scope + " " + n;
+      }
+      
    }
-   return func;
+ 
 }
 
-console.log(whatismyscope()());
+console.log(whatismyscope()()());
+
+function createBase(num){
+   return function(innernum){
+      console.log(num + innernum);
+   }
+}
+var addsix = createBase(6)
+addsix(10)
+addsix(21)
+
+
+
+
 
 
 
