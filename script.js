@@ -101,6 +101,19 @@ console.log(ele2);
 console.log(splitele);
 
 
+var scope = "I am global";
+function whatismyscope(){
+   var scope = "I am just a local";
+   function func() {
+      return scope;
+   }
+   return func;
+}
+
+console.log(whatismyscope()());
+
+
+
 
 
 
